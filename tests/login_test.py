@@ -28,7 +28,7 @@ class TestLogin():
             assert x == "OrangeHRM"
 
         except AssertionError as error:
-            print("Assertion error occurred")
+            print("Assertion error has occurred")
             print(error)
             currTime = moment.now().strftime("%d-%m-%Y_%H-%M-%S")
             testName = utils.whoami()

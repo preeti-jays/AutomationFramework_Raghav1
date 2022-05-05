@@ -12,9 +12,9 @@ def test_setup(request):
 
     if browser == 'chrome':
         driver = webdriver.Chrome(
-            executable_path="C:/Users/Administrator/PycharmProjects/AutomationFramework_1/drivers/chromedriver.exe")
+            executable_path="drivers/chromedriver.exe")
     elif browser == 'firefox':
-        driver = webdriver.Firefox(executable_path="C:/Users/Administrator/PycharmProjects/AutomationFramework_1/drivers/geckodriver.exe")
+        driver = webdriver.Firefox(executable_path="drivers/geckodriver.exe")
 
     driver.implicitly_wait(5)
     driver.maximize_window()
@@ -22,4 +22,4 @@ def test_setup(request):
     yield
     driver.close()
     driver.quit()
-    print("Test Completed")
+    print("Test Completed*/+++++")
